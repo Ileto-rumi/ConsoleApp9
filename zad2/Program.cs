@@ -9,7 +9,7 @@
             string[] words = vhod.Split(new[] { ' ', '.', ',', ';', '!', '?', '-', ':', '(', ')', '[', ']', '{', '}', '"' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (string word in words)
             {
-                string dumi = word.ToLower(); // Преобразуваме всяка дума в малки букви за да избегнем дублиране на същите думи с различни регистри
+                string dumi = word.ToLower(); 
 
                 if (chestota.ContainsKey(dumi))
                 {
@@ -23,7 +23,7 @@
             Console.WriteLine("Chestota:");
             foreach (var duma in chestota)
             {
-                Console.WriteLine($"Дума: '{duma.Key}', Честота: {duma.Value}");
+                Console.WriteLine($"Dumata '{duma.Key}' e izpolzvana {duma.Value} puti.");
             }
         }
     }
